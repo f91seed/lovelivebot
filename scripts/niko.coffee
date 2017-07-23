@@ -28,10 +28,10 @@ message_tired = [
 
 module.exports = (robot) ->
   robot.hear /にこ|@nikobot|にこちゃん/, (msg) ->
-    msg.send msg.randam message_yazawaniko
+    msg.send msg.random message_yazawaniko
 
   robot.hear /おはよう/i, (msg) ->
-    msg.send msg.randam message_morning
+    msg.send msg.random message_morning
 
   robot.hear /(疲|つか)れた/i, (msg) ->
-    msg.send msg.randam message_tired
+    msg.send msg.random message_tired
